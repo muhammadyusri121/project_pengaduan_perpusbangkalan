@@ -5,12 +5,7 @@
 @section('content')
 <!-- HERO SECTION — BRUTALIST EDITORIAL -->
 <section class="home-hero">
-    <div class="hero-content">
-        <div class="hero-badge-pill">
-            <span class="live-indicator"></span>
-            <span>PORTAL RESMI ASPIRASI & PENGADUAN PUBLIK</span>
-        </div>
-        
+    <div class="hero-content">        
         <h1 class="hero-title">
             PENGADUAN LAYANAN PERPUSTAKAAN DAERAH BANGKALAN
         </h1>

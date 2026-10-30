@@ -142,7 +142,7 @@
                     <div style="background-color: var(--color-mist-gray); border: 1px solid var(--color-ash); border-radius: var(--radius-card); padding: 22px;">
                         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <img src="{{ $response->user->avatar_url ?? 'https://ui-avatars.com/api/?name=Petugas&background=000&color=fff' }}" alt="Petugas" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;">
+                                <img src="{{ $response->user->avatar_url ?? 'https://ui-avatars.com/api/?name=Petugas&background=000&color=fff' }}" alt="Petugas" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;" referrerpolicy="no-referrer">
                                 <div>
                                     <strong style="font-size: 14px; text-transform: uppercase;">{{ $response->user->name ?? 'Petugas DISPUSIP' }}</strong>
                                     <div class="font-mono" style="font-size: 11px; color: var(--color-slate); text-transform: uppercase;">PETUGAS RESMI DISPUSIP</div>

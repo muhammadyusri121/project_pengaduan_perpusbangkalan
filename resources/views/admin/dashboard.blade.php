@@ -185,7 +185,7 @@
                     <span>Grafik Laporan Bulanan</span>
                 </h3>
                 <span class="badge-tag" style="margin-bottom: 0;">
-                    2026
+                    {{ $chartData['period'] ?? '2026' }}
                 </span>
             </div>
             <div style="padding: 20px 24px;">
@@ -203,8 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('monthlyTrendChart');
     if (!ctx) return;
 
-    const labels = {!! json_encode($monthlyStats->pluck('month_name') ?? ['Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt']) !!};
-    const data   = {!! json_encode($monthlyStats->pluck('total') ?? [0, 0, 0, 0, 0, 0]) !!};
+    const labels = {!! json_encode($chartData['labels'] ?? (isset($monthlyStats) ? $monthlyStats->pluck('month_name') : ['Okt 2026'])) !!};
+    const data   = {!! json_encode($chartData['totals'] ?? (isset($monthlyStats) ? $monthlyStats->pluck('total') : [0])) !!};
 
     new Chart(ctx, {
         type: 'bar',

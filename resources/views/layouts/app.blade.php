@@ -100,7 +100,7 @@
                 <!-- User Dropdown -->
                 <li class="nav-user-dropdown">
                     <a href="#" class="user-toggle">
-                        <img src="{{ Auth::user()->avatar_url }}" alt="Avatar" class="user-avatar-tiny">
+                        <img src="{{ Auth::user()->avatar_url }}" alt="Avatar" class="user-avatar-tiny" referrerpolicy="no-referrer">
                         <span>{{ Str::limit(Auth::user()->name, 16) }}</span>
                         <i class="bi bi-chevron-down" style="font-size: 11px;"></i>
                     </a>

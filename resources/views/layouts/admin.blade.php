@@ -78,7 +78,7 @@
 
         <!-- Profil Pengguna Sedang Login -->
         <div class="sidebar-user-card">
-            <img src="{{ Auth::user()->avatar_url }}" alt="Avatar" class="sidebar-user-avatar">
+            <img src="{{ Auth::user()->avatar_url }}" alt="Avatar" class="sidebar-user-avatar" referrerpolicy="no-referrer">
             <div class="sidebar-user-info">
                 <span class="sidebar-user-name">{{ Auth::user()->name }}</span>
                 <span class="sidebar-user-role">
